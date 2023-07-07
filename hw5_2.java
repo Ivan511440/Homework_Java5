@@ -9,12 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-
-public class hw5_2 {
-
-    /**
-     * @param args
-     */
+public class hw5_2{
     public static void main(String[] args) {
        String[] employees = {"Иван Иванов",
                                             
