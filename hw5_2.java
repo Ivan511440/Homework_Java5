@@ -51,7 +51,7 @@ public class hw5_2 {
 
     Map<String, Integer> counts = new HashMap<>();
     for (String employee : employees) {
-        if (counts.containsKey(employee)){
+        if (counts.containsKey(employee)) {
             counts.put(employee, counts.get(employee) + 1);
         }
         else{
@@ -60,10 +60,10 @@ public class hw5_2 {
     }
     Map<String, Integer> sortedCounts = new TreeMap<>((e1, e2) -> counts.get(e2).compareTo(counts.get(e1)));
     sortedCounts.putAll(counts);
-    for (Map.Entry<String, Integer> entry : sortedCounts.entrySet()){
+    for (Map.Entry<String, Integer> entry : sortedCounts.entrySet()) {
         String name = entry.getKey();
         int count = entry.getValue();
-        if (count > 1){
+        if (count > 1) {
             System.out.println(name + ": " + count);
         }
     }
